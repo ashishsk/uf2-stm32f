@@ -8,6 +8,16 @@ To build just run ``make`` in this folder.
 This will fetch git submodules if needed and build libopenocm3
 (which only happens once).
 
+
+If the installation is on the bash on WSL, make sure Python is installed and gcc tools as well. 
+```c
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install python2.7-minimal
+sudo apt-get install python-is-python3
+sudo apt-get install gcc-arm*
+```
+
 The binaries will be in `build/BOARDNAME`. 
 The following files will be built:
 * `bootloader.elf` - for use with JTAG adapters
